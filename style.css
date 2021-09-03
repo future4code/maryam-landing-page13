@@ -83,52 +83,45 @@
    margin: 5%;
   }
 }
+
+
 .otavio{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   background-color: #DD6B20;
-  height: calc(100vh - 61px);
+  height: 100vh;
   width: 100%;
   background-image: linear-gradient(to bottom, white, #DD6B20);
 }
 
-.otavio-content{
-  margin-top: 40px;
-  display: flex;
+@media(max-width: 768px){
+  .otavio{
+    background: #fff;
+    height: 100%;
+  }
 }
 
-.otavio-content-text{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 860px;
-  margin-right: 60px;
+@media(max-width: 768px){
+  .otavio>img{
+    width: 320px;
+  }
 }
 
-.otavio-content-text>h1{
-  font-size: 40px;
-  text-align: center;
-  color: #DD6B20;
-}
-
-.otavio-content-text>p{
-  font-size: 20px;
-  text-align: center;
-  color: #fff;
-  margin-top: 20px;
-  justify-content: center;
-  background-color: #DD6B20;
-  height: calc(100vh - 61px);
-  width: 100%;
-}
 
 .otavio>h1{
-  font-size: 40px;
   text-align: center;
-  color: white;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+@media(max-width: 768px){
+  .otavio>h1{
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+  }
 }
 
 .otavio-container{
@@ -140,8 +133,16 @@
   margin-top: 60px;
 }
 
+@media(max-width: 768px){
+  .otavio-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .otavio-container>div{
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: #FEEBC8;
   width: 240px;
@@ -152,6 +153,12 @@
   position: relative;
   cursor: pointer;
   transition: all 0.3s;  
+}
+
+@media(max-width: 768px){
+  .otavio-container>div{
+    margin-top: 16px;
+  }
 }
 
 .otavio-container>div:hover{
@@ -183,18 +190,12 @@
   bottom: 0;
 }
 
-.otavio-container>div>img{
-  width: 80px;  
-}
-
-
 /* ------------------------------ */
 
 
 
 footer {
   display: flex;
-  position: relative;
   align-items: center;
   background-color:#3b3b3b;
   justify-content:space-between;
@@ -228,9 +229,3 @@ footer img {
 
 
 
-  padding: 0;
-}
-
-header{
-  display: flex;
-}
