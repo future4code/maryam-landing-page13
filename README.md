@@ -6,7 +6,7 @@ F4BANK é um website do banco mais famoso do Brasil, o F4BANK.
 Aqui você pode depositar o seu dinhero, que nós iremos te ajudar a multiplicá-lo, em uma plataforma gratuita, simples e eficiente.
 
 Nosso time é liderado por André, Sthefane e Otávio. Para obter mais informações, acesse: overjoyed-cake.surge.sh
-overjoyed-cake.surge.sh.
+
 
 ## Tecnologias Aplicadas
 HTML, CSS e Git
