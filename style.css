@@ -6,20 +6,24 @@
   
   header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: lightgoldenrodyellow;
-    align-items: center;
-    
+    align-items: center;    
   }
 
   .nav-header{
       /* border: 1px solid black; */
       display: flex;
       flex-direction: row;
-      align-items: center;
-      
+      align-items: center;      
   }
+
+  @media(max-width: 768px){
+    .nav-header{
+      display: none;      
+  }
+  }
+
 
   .logo{
       padding: 10px;
@@ -31,9 +35,7 @@
       padding: 30px;
       height:40px;
       width:100px;
-      /* border: 1px solid black; */
-      
-      
+      /* border: 1px solid black; */      
   }
 
   .div-header{
@@ -46,64 +48,7 @@
       padding: 5px;
   }
 
-  .andre{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-
-  #h1-andre{
-    padding: 15px;
-
-  }
-  h3{
-    font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-  }
-
-  #p-andre{
-    padding: 20px;
-  }
-
-  #div1{
-    position: relative;
-        
-  }
-
-  .people:hover .img-people{ 
-    opacity: 0.7;
-    
-  }
-
-  #h3-1{
-    position: absolute;
-    bottom: 40px;
-    margin-left: 30%;
-    /* margin-right: 50%; */
-    
-    
-  }
-
-   
-
-.img-people{
-    padding-top: 40px;
-    height: 25vw;
-    width: 45vh;
-      
-    margin-left: 4px;
-}
-
-.people{
-    display: flex;
-    justify-content: center;
-}
-
-  margin:0;
-  padding: 0;
-}
-
+  
 .pagInicial{
   grid-template-rows: 1fr;
   /* linhas */
@@ -291,6 +236,69 @@
   bottom: 0;
 }
 
+.andre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+}
+
+#h1-andre{
+  padding: 15px;
+}
+
+h3{
+font-weight: 900;
+font-family: 'Courier New', Courier, monospace;
+font-size: large;
+}
+
+#p-andre{
+padding: 20px;
+}
+
+#div1{
+position: relative;    
+}
+
+.people:hover .img-people{ 
+opacity: 0.7;
+}
+
+#h3-1{
+position: absolute;
+bottom: 40px;
+margin-left: 30%;
+/* margin-right: 50%; */
+}
+
+.img-people{
+padding-top: 40px;
+height: 480px;
+width: 480px;
+  
+margin-left: 4px;
+}
+
+@media(max-width: 768px){
+  .img-people{
+    height: 240px;
+    width: 240px;
+  }
+}
+
+.people{
+display: flex;
+justify-content: center;
+}
+
+@media(max-width: 768px){
+  .people{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
 /* ------------------------------ */
 
 
@@ -303,9 +311,8 @@ footer {
   height: 100px;
   background-size: 100%;
   background-repeat: no-repeat;
-  
-
 } 
+
 footer a {
   text-align: center;
   margin: 10px;
