@@ -1,5 +1,6 @@
 *{
   margin: 0;
+
   border: 0;
 }
 header{
@@ -144,3 +145,10 @@ footer img {
 
 
 
+
+  padding: 0;
+}
+
+header{
+  display: flex;
+}
