@@ -46,6 +46,7 @@
       font-size: 2em;
       color:#DD6B20;
       padding: 5px;
+      cursor: pointer;
   }
 
   
@@ -137,7 +138,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #DD6B20;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(to bottom, white, #DD6B20);
 }
