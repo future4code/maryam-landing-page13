@@ -3,53 +3,86 @@
   padding: 0;
 }
 
-header{
-  display: flex;
-  background-color: #fff;
-  height: 60px;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 1px solid #DD6B20;
-  box-shadow: 2px 2px 2px 2px #DD6B20;
-  border-radius: 4px;
+.pagInicial{
+  grid-template-rows: 1fr;
+  /* linhas */
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top left, rgb(255, 146, 73), transparent, rgba(247, 139, 67, 0.87)); 
 }
 
-@media(max-width: 768px){
-  header>div>nav{
-    display: none;
+.caixaCadastro{
+  background-color: #e07229;
+  width: 80%;
+  height: 80%;
+  border-radius: 10%;
+  border: black 1px solid;
+  /* margin-left: 40% ; */
+  box-shadow: 0px 0px 10px 5px #925a34; 
+  margin-top: 10%;    
+  }  
+  
+  @media screen and (max-device-width: 500px) {
+    .caixaCadastro {
+      width: 130%;
+      height: 60%;
+      margin-top: 50%;
+    }    
+  }
+
+.caixaCadastro img {
+  
+  width: 80%;
+  margin-left: 8%;
+  border-radius: 10%;
+  margin-top: 5%;
+  align-items: center;  
+}
+
+.caixaCadastro p {
+  color: aliceblue;
+  text-align: center;
+  font: 2em sans-serif;
+  font-size: 20px;
+  margin-left: 10%;
+  margin-right: 10%;  
+} 
+
+.caixaCadastro h3{
+  color: white;
+  text-align: center;
+  margin-top: 15%;
+  font-size: 13px;
+}
+
+.caixaCadastro input{
+   width: 60%;
+   height: 5%;
+  margin-left: 20%;
+   border: black 2px solid;
+  border-radius: 5px;
+  margin-top: 2%;
+  display: flex;
+  background-image: linear-gradient(to right, rgb(194, 91, 23), transparent, rgba(236, 104, 16, 0.87));
+}
+
+.textosDaPag {
+  display: flex;
+  margin-top: 30%;
+  margin-left: 4%;
+  font-size: 140%;
+  color: #be4c00;
+}
+
+@media screen and (max-device-width: 500px){
+  .textosDaPag{
+   font-size: 90%;
+   align-items: center;
+   margin: 5%;
   }
 }
-
-div{
-  display: flex;
-  align-items: center;
-}
-
-header>h1{
-  color: #DD6B20;
-}
-
-header>div>nav>a{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #DD6B20;
-  margin-right: 20px;
-}
-
-header>div>nav>a:hover{
-  color: #C05621;
-  text-decoration: underline;
-}
-
-header>div>button{
-  background: #DD6B20;
-  color: #FFF;
-  width: 80px;
-  height: 32px;
-  border-radius: 20px;
-  border: none;
-}
-
 .otavio{
   display: flex;
   flex-direction: column;
@@ -86,7 +119,6 @@ header>div>button{
   text-align: center;
   color: #fff;
   margin-top: 20px;
-
   justify-content: center;
   background-color: #DD6B20;
   height: calc(100vh - 61px);
@@ -151,110 +183,8 @@ header>div>button{
   bottom: 0;
 }
 
-
 .otavio-container>div>img{
-  width: 80px;
-  
-}
-
-header{
-  display: flex;
-}
-.pagInicial{
-  grid-template-rows: 1fr;
-  /* linhas */
-  grid-template-columns: 1.5fr 1.5fr 1fr;
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to top left, rgb(255, 146, 73), transparent, rgba(247, 139, 67, 0.87));
-  
-
-  
-  
-}
-.caixaCadastro{
-  background-color: #e07229;
-  width: 80%;
-  height: 80%;
-  border-radius: 10%;
-  border: black 1px solid;
-  /* margin-left: 40% ; */
-  box-shadow: 0px 0px 10px 5px #925a34; 
-  margin-top: 10%;
-  margin-left: ;
-
-    
-  }
-  
-  
-  @media screen and (max-device-width: 500px) {
-    .caixaCadastro {
-      width: 130%;
-      height: 60%;
-      margin-top: 50%;
-    }
-  
-    
-  }
-.caixaCadastro img {
-  
-  width: 80%;
-  margin-left: 8%;
-  border-radius: 10%;
-  margin-top: 5%;
-  align-items: center;
-  
-  
-  
-}
-.caixaCadastro p {
-  color: aliceblue;
-  text-align: center;
-  font: 2em sans-serif;
-  font-size: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
-  
-  
-  
-} 
-.caixaCadastro h3{
-  color: white;
-  text-align: center;
-  margin-top: 15%;
-  font-size: 13px;
-}
-.caixaCadastro input{
-   width: 60%;
-   height: 5%;
-  margin-left: 20%;
-   border: black 2px solid;
-  border-radius: 5px;
-  margin-top: 2%;
-  display: flex;
-
-
-  background-image: linear-gradient(to right, rgb(194, 91, 23), transparent, rgba(236, 104, 16, 0.87));
-
-  
-  
-}
-
-.textosDaPag {
-  display: flex;
-  margin-top: 30%;
-  margin-left: 4%;
-  font-size: 140%;
-  color: #be4c00;
-
-}
-@media screen and (max-device-width: 500px){
-  .textosDaPag{
-   font-size: 90%;
-   align-items: center;
-   margin: 5%;
-  }
+  width: 80px;  
 }
 
 
@@ -275,21 +205,19 @@ footer {
 
 } 
 footer a {
-  display: ;
   text-align: center;
   margin: 10px;
-  color:#DD6B20;
-
- 
+  color:#DD6B20; 
 }
+
 footer img {
   width:50px;
   margin-left: 40px;
   border: solid 1px rgb(20, 18, 17);
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 5px #3b1903; 
-  
+  box-shadow: 0px 0px 10px 5px #3b1903;   
 }
+
 .bordaLinks {
    margin: 80px;
 }
