@@ -15,4 +15,4 @@ HTML, CSS e Git
 André Hoffman, Otávio Augusto, Sthefane Oliveira 
 
 ## Surge
- beneficial-fifth.surge.sh
+https://fast-brick.surge.sh/
